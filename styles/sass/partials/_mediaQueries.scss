@@ -1,0 +1,25 @@
+// Devices with screens 1000px and smaller
+@media (max-width: 1000px) {
+    .movie-display-ul {
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+    }
+    li {
+        width: 100%;
+    }
+}
+
+// Devices with screens 500px and smaller
+@media (max-width: 500px) {
+    .get-genre,
+    .eraRange {
+        width: 100%;
+    }
+    .movie-display-ul {
+        width: 95%;
+    }
+    li img {
+        height: 300px;
+    }
+}

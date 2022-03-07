@@ -1,0 +1,145 @@
+html {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 125%;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.movie-display-ul {
+    display: flex;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 5rem;
+    color: red;
+}
+
+h2 {
+    margin: 20px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem; 
+}
+
+ul {
+    list-style: none;
+    color: white;
+    padding: 0;
+}
+
+li {
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    width: calc(100%/3);
+    padding: 25px;
+}
+
+li p {
+    text-align: left;
+}
+
+select {
+    border: 2px solid goldenrod;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.15rem;
+}
+
+.get-genre, .eraRange {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 350px;
+    height: 30px;
+}
+
+.user-choice {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    border: 2px solid goldenrod;
+    background-color: black;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    background: url(../assets/film-svgrepo-com.svg);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    height: 40px;
+    width: 40px;
+    border: 1px solid transparent;
+    background: url(../assets/film-svgrepo-com.svg);
+}
+
+
+button {
+    margin: 50px 0;
+    padding: 20px;
+    border: 15px dotted goldenrod;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 20px goldenrod;
+    }
+}
+
+@keyframes blink {
+    50% {border-color: rgb(245, 231, 196)};
+}
+
+button, img {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+li img {
+    width: 100%;
+    height: 500px;
+    border: 15px dotted goldenrod;
+}
